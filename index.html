@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>WI-FI ???</title>
+  <meta property="og:title" content="WI-FI ???" />
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital@0;1&family=Playfair+Display+SC:wght@900&family=Playfair+Display:ital,wght@0,800;1,800&family=Manrope:wght@800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css'><link rel="stylesheet" href="./style.css">
@@ -15,41 +16,48 @@
     <h1>Wi-Fi ???</h1>
     <aside> 
       <div>
-        <div class="issue"> </div>
-        <div class="date">Welcome to Cyberspace .</div>
-        <div class="edition"></div>
+
+        <div class="date"><h3>Welcome to Cyberspace .</h3></div>
+
       </div>
     </aside>
     <h2 class="title--large main-title">Capturing and sharing the overflow of Wi-Fi signals in urban areas</h2>
     <div class="main-text">
       <p>我們支持減少數位差距和提高Wi-Fi進入數位空間的平等性。<br>
-        我們提出一項新的方式：在城市中捕捉和共享溢出的Wi-Fi信號，讓那些在數位世界邊緣徘徊的人可以更容易進入數位空間。<br>讓Wi-Fi成為一種公共資源，如同空氣和水一樣自由、平等地被所有人享用。
+        我們提出一項新的方式：在城市中捕捉和共享溢出的Wi-Fi信號，讓那些在數位世界邊緣徘徊的人可以更容易進入數位空間。<br>讓Wi-Fi成為一種公共資源，如同空氣和水一樣自由、平等地被所有人使用。
       </p>  
     </div>
     <div class="main-text">
-      <img src="2.png">
+      <img src="4.png">
+      <p class="hh3">台北常態性熱點分布圖，白色為未知區域</p>
     </div>
     <div class="main-text">
-      <figcaption>Capturing and sharing the overflow of Wi-Fi signals in urban areas</figcaption>
+      <hr size="8px" width="100%">
     </div>
     
-        
+   
 <!---->
-        <h2 class="title--large main-title">WI-FI 概念圖</h2>
+       <!-- <h2 class="title--large main-title">WI-FI 概念圖</h2>-->
         <div class="main-text">
           <p>
-            放WI-FI 傳播途徑 圖
+            WI-FI 概念圖
           </p>  
         </div>
-        <div class="main-text"><img src="1.png"></div>
+        <div class="main-text">
+          <img src="1.png">
+          <hr size="8px" width="100%">
+        </div>
 
-        <h2 class="title--large main-title">設備說明</h2>
+       <!-- <h2 class="title--large main-title">工具說明</h2>-->
         <div class="main-text">
           <p>
-            放設備介紹和使用方式
+            工具介紹和使用方式
           </p>  
         </div>
-        <div class="main-text"><img src="1.png"></div>
+        <div class="main-text">
+          <img src="3.jpg">
+          <hr size="8px" width="100%">
+        </div>
 
 
 
@@ -65,15 +73,20 @@
             <figcaption>A to-do list that grows succulents when you've completed a task</figcaption>
           </figure>
 -->
-<div class="main__wrapper">
+<div class="main__wrapper main-text">
   <!-- ... 其他內容 ... -->
 
   <button id="randomNumberButton">指示</button>
+
 
   <!-- 模態框 -->
   <div id="myModal" class="modal">
     <div class="modal-content">
       <span class="close">&times;</span>
+      
+      <!-- 加載圖示 -->
+      <div id="loading" class="loading" style="display:none;"></div>
+      
       <h2 class="title--large main-title" id="randomNumberText">設備說明</h2>
     </div>
   </div>

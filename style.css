@@ -48,9 +48,10 @@ h1 {
   }
 }
 
+
 h3 {
-  font: italic 20px var(--font-title);
-  margin-bottom: 1rem;
+  font: italic 30px var(--font-title);
+  /*margin-bottom: 1rem;*/
 }
 
 h4 {
@@ -76,8 +77,8 @@ em {
 .title--large {
   font-family: var(--font-title);
   font-size: 32px;
-  font-style: italic;
-  text-align: left;
+  /*font-style: italic;*/
+  text-align: center;
   margin-bottom: 0.8rem;
 }
 @media (min-width: 700px) {
@@ -599,20 +600,23 @@ aside > div > div {
 }
 
 #randomNumberButton {
-  padding: 10px 20px;
-  background-color: #4CAF50;
-  color: white;
-  border: none;
+  padding: 10px 300px; /* 增加邊距使按鈕更大 */
+  background-color: #ffffff; /* 白色背景 */
+  color: #000000; /* 黑色文字 */
+  font-size: 18px; /* 增加字體大小 */
+  border: 2px solid #000000; /* 黑色邊框 */
   border-radius: 5px;
   cursor: pointer;
+  transition: all 0.3s ease; /* 平滑過渡效果 */
 }
 
 #randomNumberButton:hover {
-  background-color: #45a049;
+  background-color: #000000; /* hover時的背景色 */
+  color: #ffffff; /* hover時的文字顏色 */
 }
 /* 按鈕置中樣式 */
 .main__wrapper {
-  text-align: center; /* 居中容器內的內容 */
+   /*text-align: center; /* 居中容器內的內容 */
 }
 
 /* 模態框樣式 */
@@ -631,10 +635,12 @@ aside > div > div {
 
 .modal-content {
   background-color: #fefefe;
-  margin: 15% auto; /* 15% 頂部邊距，水平居中 */
-  padding: 20px;
+  opacity: 0.7;
+  margin: 40% auto; /* 調整上邊距以控制垂直位置 */
+  padding: 100px; /* 可增加內邊距以增大模態框 */
   border: 1px solid #888;
-  width: 80%; /* 可根據需要調整寬度 */
+  width: 100%; /* 增大模態框的寬度 */
+  max-width: 800px; /* 設置一個最大寬度 */
 }
 
 .close {
@@ -651,3 +657,28 @@ aside > div > div {
   cursor: pointer;
 }
 
+/* 加載圖示樣式 */
+.loading {
+  border: 5px solid #f3f3f3; /* 輕色邊框 */
+  border-top: 5px solid #3498db; /* 藍色邊框 */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite;
+  margin: 20px auto; /* 水平居中 */
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* 模態框內容居中 */
+.modal-content {
+  text-align: center;
+}
+
+.hh3 {
+  font: 10px var(--font-title);
+  /*margin-bottom: 1rem;*/
+}
