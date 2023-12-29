@@ -213,7 +213,7 @@ main .cssgrid-collection {
 
 img {
   width: 100%;
-  filter: grayscale(95%);
+  /*filter: grayscale(95%);*/
   margin-bottom: 0.5rem;
   border: 1px solid var(--black);
   transition: 0.3s ease;
