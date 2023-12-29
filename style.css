@@ -74,6 +74,7 @@ em {
   font-style: italic;
 }
 
+
 .title--large {
   font-family: var(--font-title);
   font-size: 32px;
@@ -681,4 +682,12 @@ aside > div > div {
 .hh3 {
   font: 10px var(--font-title);
   /*margin-bottom: 1rem;*/
+}
+.title--mid {
+  font-family: var(--font-title);
+  font-size: 12px;
+  font-weight: bold;
+  /*font-style: italic;*/
+  text-align: center;
+  margin-bottom: 0.8rem;
 }
